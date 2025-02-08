@@ -55,7 +55,7 @@ elseif ($acao === "Excluir") {
 
     if ($stmt->execute()) {
         session_destroy();
-        echo "Conta excluída com sucesso. <a href='register.php'>Cadastrar novamente</a>";
+        echo "Conta excluida com sucesso. <a href='register.php'>Cadastrar novamente</a>";
     } else {
         echo "Erro ao excluir conta.";
     }
