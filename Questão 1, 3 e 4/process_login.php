@@ -25,7 +25,7 @@ if ($row = $result->fetch_assoc()) {
         echo "Senha incorreta.";
     }
 } else {
-    echo "Usuário não encontrado.";
+    echo "Usuario nao encontrado.";
 }
 $stmt->close();
 $mysqli->close();
