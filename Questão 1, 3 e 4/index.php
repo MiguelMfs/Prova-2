@@ -34,7 +34,7 @@ $result = $stmt->get_result();
         <tr>
             <th>Nome Completo</th>
             <th>Idade</th>
-            <th>Número do Apartamento</th>
+            <th>Numero do Apartamento</th>
         </tr>
         <?php while ($row = $result->fetch_assoc()): ?>
             <tr>
