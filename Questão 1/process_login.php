@@ -3,7 +3,7 @@ session_start();
 
 $mysqli = new mysqli("localhost", "root", "", "moradores_db");
 if ($mysqli->connect_error) {
-    die("Falha na conexão: " . $mysqli->connect_error);
+    die("Falha na conexao: " . $mysqli->connect_error);
 }
 
 $cpf = $_POST['cpf'];
@@ -25,7 +25,7 @@ if ($row = $result->fetch_assoc()) {
         echo "Senha incorreta.";
     }
 } else {
-    echo "Usuário não encontrado.";
+    echo "Usuario nao encontrado.";
 }
 $stmt->close();
 $mysqli->close();
