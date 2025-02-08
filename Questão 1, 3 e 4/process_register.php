@@ -1,7 +1,7 @@
 <?php
 $mysqli = new mysqli("localhost", "root", "", "moradores_db");
 if ($mysqli->connect_error) {
-    die("Falha na conexão: " . $mysqli->connect_error);
+    die("Falha na conexao: " . $mysqli->connect_error);
 }
 
 $nome = $_POST['nome_completo'];
