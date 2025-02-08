@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id'])) { // Verifica se o usuário está logado
 // Conexão com o banco de dados
 $mysqli = new mysqli("localhost", "root", "", "moradores_db");
 if ($mysqli->connect_error) {
-    die("Falha na conexão: " . $mysqli->connect_error);
+    die("Falha na conexao: " . $mysqli->connect_error);
 }
 
 // Obtém os dados do usuário logado
@@ -36,7 +36,7 @@ $stmt->close();
         Número do Apartamento: <input type="number" name="numero_apartamento" value="<?php echo $usuario['numero_apartamento']; ?>" required><br>
         Senha Atual (para confirmar): <input type="password" name="senha" required><br>
         <input type="submit" name="acao" value="Alterar">
-        <input type="submit" name="acao" value="Excluir" onclick="return confirm('Tem certeza que deseja excluir sua conta? Esta ação não pode ser desfeita.')">
+        <input type="submit" name="acao" value="Excluir" onclick="return confirm('Tem certeza que deseja excluir sua conta? Esta acao nao pode ser desfeita.')">
     </form>
     <br>
     <a href="logout.php">Sair</a>
