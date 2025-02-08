@@ -21,14 +21,14 @@ function validarSenha(senha) {
 }
 
 // Exemplo de uso
-let nome = "  joão da silva  ";
+let nome = "  Miguel Santos  ";
 let idade = 20;
 let cpf = "123.456.789-09";
 let apartamento = "310";
 let senha = "123456";
 
 console.log("Nome formatado:", formatarNome(nome));
-console.log("Idade válida:", validarIdade(idade));
+console.log("Idade valida:", validarIdade(idade));
 console.log("CPF validado:", validarCPF(cpf));
-console.log("Apartamento válido:", validarApartamento(apartamento));
-console.log("Senha válida:", validarSenha(senha));
+console.log("Apartamento valido:", validarApartamento(apartamento));
+console.log("Senha valida:", validarSenha(senha));
